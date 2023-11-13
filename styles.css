@@ -1,0 +1,77 @@
+:root {
+    --color-one: rgb(226, 179, 97);
+    --winning-blocks: rgba(208, 194, 180, 0.5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    color: var(--color-one);
+    background-color: rgb(57, 78, 91);
+}
+
+h1 {
+    font-size: 54px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-one);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color-one);
+    font-size: 20px;
+    transition: 300ms;
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
