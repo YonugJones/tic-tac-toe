@@ -35,7 +35,7 @@ body {
     font-size: 54px;
 }
 
-button {
+.restart-button {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--color-one);
@@ -51,7 +51,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-#boxes {
+.gameboard {
     width: 450px;
     display: flex;
     flex-wrap: wrap;
@@ -70,18 +70,18 @@ button:hover {
     cursor: pointer;
 }
 
-#boxes .box:nth-child(-n+3) {
+.gameboard .box:nth-child(-n+3) {
     border-top: none;
 }
 
-#boxes .box:nth-child(3n) {
+.gameboard .box:nth-child(3n) {
     border-right: none;
 }
 
-#boxes .box:nth-last-child(-n+3) {
+.gameboard .box:nth-last-child(-n+3) {
     border-bottom: none;
 }
 
-#boxes .box:nth-child(3n - 2) {
+.gameboard .box:nth-child(3n - 2) {
     border-left: none;
 }
